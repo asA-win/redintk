@@ -1,0 +1,200 @@
+#task-manager-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url('https://res.cloudinary.com/imagist/image/fetch/q_auto,f_auto,c_scale,w_2240/https%3A%2F%2Ftodoist.com%2F_next%2Fstatic%2Fimages%2Fbackground-illustration_31391123ca7b512e5c7a8dce6195b0b3.png'); 
+  background-position: center;
+}
+
+#add-task-title,
+#task-list-title {
+  color: #333;
+}
+
+#filter-container {
+  margin-bottom: 20px;
+}
+
+#filter-label {
+  font-weight: bold;
+}
+
+#filter-select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#title-label,
+#description-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#title,
+#description {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#add-task-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.task-title {
+  margin-right: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+#task-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.task-title {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.task-description {
+  margin: 0 0 15px;
+}
+
+.complete-checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.complete-checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+.complete-checkbox-label input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.complete-checkbox-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.complete-checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.complete-checkbox-label .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.edit-button,
+.delete-button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.header-image {
+  width: 100%; 
+  max-width: 500px;
+}
+
+.logout-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #333; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logout-link:hover {
+  color: #007bff; 
+}
+
